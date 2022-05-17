@@ -17,6 +17,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Lora:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
     <title>My Portfolio</title>
 </head>
@@ -24,7 +29,7 @@
 <body>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"> <a href="#"> Caitlin <span> Lindauer </span> </a> </div>
+            <div class="logo"> <a href="#"> Portfolio <span> Caitlin Lindauer </span> </a> </div>
             <ul class="menu">
                 <li> <a href="#home" class="menu-btn">Home</a> </li>
                 <li> <a href="#skills" class="menu-btn">Skills</a> </li>
@@ -50,9 +55,9 @@
                 About Me
             </h2>
             <div class="about-content">
-                <div class="left column"> <img src="#" alt="picture of me"> </div>
+                <div class="left column image1"> <img src="https://lh3.googleusercontent.com/usv3r3wZWpx-K4Q1XcYIF95QlOnCsdFx20uaJxnqtv6VPD_q7j8kUF7h_H49N_uLitrQjoeZ-pozsb-CIpxsJAVb3az6YUfKSXcsh8oVfwVNwbc8VuuDhxdf0-u-rP5n0e46amMmcQ=w2400"" alt="picture of me"> </div>
                 <div class="column-right">
-                    <div class="text"> I am <span class="typing-2"></span> </div>
+                    <div class="text"> I am a <span class="typing-2"></span> </div>
                     <p> I am a junior MERN stack developer ....</p>
                 </div>
             </div>
@@ -73,19 +78,19 @@
                 <div class="column right">
                     <div class="bars">
                         <div class="info">
-                            <span> html, css, bootstrap </span>
-                            <span> 90% </span>
+                            <span> HTML, CSS, Bootstrap </span>
+                            <span>  85% </span>
                         </div>
                         <div class="line html"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
-
+                            JavaSript, Node.js, Express.js, 
                         </div>
                     </div>
                     <div class="bars">
                         <div class="info">
-
+                            SQL, handlbars, 
                         </div>
                     </div>
                 </div>
@@ -100,16 +105,16 @@
             <div class="carousel owl-carousel">
                 <div class="card">
                     <div class="box" data-action="click on card to view site">
-                        <a href="" target="_blank"> <img src="" alt=""> </a>
-                        <div class="text"> Title of project </div>
-                        <p> Brief description </p>
+                        <a href="https://social-burger.herokuapp.com/" target="_blank"> <img src="https://lh3.googleusercontent.com/dKSD32TPh6Nm0Zls9nCU4rYIe_FcjO6so8C1dG-mGvtfgFHyewgZ44Si1F8XMA0j7y9k2-WXJ9ghPLUqvYILv2ciZYCL9m16h3adzNNdVXlPoyOtpF60hv6B0kkGMo070Sf4az5i-A=w2400" alt="Social Burger logo"> </a>
+                        <div class="text"> Social Burger </div>
+                        <p> Social Burger is a site in which users interact with each other by sharing their own customized burger. On social burger, our main goal is to connect with people around the globe with creativity and innovation. </p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box" data-action="click on card to view site">
-                        <a href="" target="_blank"> <img src="" alt=""> </a>
-                        <div class="text"> Title of project </div>
-                        <p> Brief description </p>
+                        <a href="https://jvbridge.github.io/sbs-email-verification/" target="_blank"> <img src="https://jvbridge.github.io/sbs-email-verification/" alt="sbs-email-verification"> </a>
+                        <div class="text"> sbs-email-verification </div>
+                        <p> This is a web app that takes a given email and returns whether the email has been leaked, or lost, and some basic information about said email. </p>
                     </div>
                 </div>
             </div>
@@ -147,7 +152,7 @@
                                     Phone Number
                                 </div>
                                 <div class="sub-title">
-                                    <a href="tel:123-456-9510"> Number </a>
+                                    <a href="tel:209-456-9510"> 209-456-9510 </a>
                                 </div>
                             </div>
                         </div>
@@ -160,7 +165,7 @@
                                     Email
                                 </div>
                                 <div class="sub-title">
-                                    <a href="mailto:email@email.com"> Email </a>
+                                    <a href="mailto:clilos018@gmail.com"> clilos018@gmail.com </a>
                                 </div>
                             </div>
                         </div>
@@ -169,7 +174,25 @@
 
                 <span class="cloumn right">
                     <div class="text">
-                        
+                        <form class="contact-form" action="https://formsubmit.co/clilos018@gmail.com" method="POST">
+                            <div class="fields">
+                                <div class="field name" name="contact-name">
+                                    <input type="text" placeholder="name" autocomplete="on" required>
+                                </div>
+                                <div class="field email" name="contact-email">
+                                    <input type="email" placeholder="email" autocomplete="on" required>
+                                </div>
+                                <div class="field" name="subject">
+                                    <input type="text" placeholder="subject" autocomplete="on" required>
+                                </div>
+                                <div class="field textarea" name="message">
+                                    <textarea cols="30" rows="10" placeholder="message" required></textarea>
+                                </div>
+                                <div class="button-area">
+                                    <button class="submit" type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </span>
 
@@ -177,7 +200,8 @@
         </div>
     </section>
 
-
+    <footer> <span> Created by: <a href="">Caitlin Lindauer</a> | <span class="far fa-copyright"></span> 2022 all rights
+            reserved </span> </footer>
 
     <script src="script.js"></script>
 </body>
